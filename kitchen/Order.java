@@ -19,6 +19,19 @@ public class Order {
 
     }
 
+    public int getTotalCookingTime(){
+       int cookTime = 0;
+        for (Dish dish:dishes){
+            cookTime+=dish.getDuration();
+        }
+
+        return cookTime;
+    }
+
+    public boolean isEmpty(){
+        return dishes.isEmpty();
+    }
+
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder("");

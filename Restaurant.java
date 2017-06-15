@@ -21,5 +21,6 @@ public class Restaurant {
         cook.addObserver(waiter);
         tablet.createOrder();
 
+
     }
 }
