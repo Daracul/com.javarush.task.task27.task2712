@@ -28,6 +28,7 @@ public class ConsoleHelper {
         // string for console read
         String chooseDish="";
         while (!(chooseDish=readString()).equals("exit")){
+            //if client typed something like sOUP or soup e.t.c. the final dish will searching in our Enum by name Soup
             chooseDish=chooseDish.substring(0,1).toUpperCase()+chooseDish.substring(1).toLowerCase();
             try {
                 chosenDishes.add(Dish.valueOf(chooseDish));
