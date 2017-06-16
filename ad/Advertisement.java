@@ -47,6 +47,9 @@ public class Advertisement {
     public long getAmountPerOneDisplaying() {
         return amountPerOneDisplaying;
     }
+    public long getOneSecondCostInThousandsParts(){
+        return (long) (amountPerOneDisplaying*(1000/(double)duration));
+    }
 
     public void setAmountPerOneDisplaying(long amountPerOneDisplaying) {
         this.amountPerOneDisplaying = amountPerOneDisplaying;
